@@ -19,6 +19,7 @@ const CALENDER_CONSTANT = {
     "Nov",
     "Dec",
   ],
+  DAYS: ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"],
   DAYS_IN_MONTHS: [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31],
   EXTRA_DAYS: [0, 2, 4, 6, 7, 9, 11],
 };

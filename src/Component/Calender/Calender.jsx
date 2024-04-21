@@ -1,8 +1,8 @@
 import CALENDER_CONSTANT from "./Calender.constants";
 import "./Calender.css";
 
-const Calender = ({ date }) => {
-  const arrDay = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
+const Calender = ({ date, handleView }) => {
+  const dayList = Array.from({ length: 7 }, (_, i) => i);
   let monthLength = CALENDER_CONSTANT.DAYS_IN_MONTHS[date.month];
   if (date.month === 1) {
     if (
@@ -31,9 +31,9 @@ const Calender = ({ date }) => {
   return (
     <>
       <div className="calender">
-        {arrDay.map((day, index) => (
+        {dayList.map((day, index) => (
           <div key={index} className="day">
-            {day}
+            {CALENDER_CONSTANT.DAYS[day]}
           </div>
         ))}
 
@@ -52,7 +52,9 @@ const Calender = ({ date }) => {
           </div>
         ))}
       </div>
-      <div className="holidays box"></div>
+      <div className="holidays box">
+        <button onClick={() => handleView(false)}>Home</button>
+      </div>
     </>
   );
 };

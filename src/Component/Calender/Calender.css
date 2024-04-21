@@ -74,11 +74,26 @@ button {
 
 @media (max-width: 900px) {
   .container {
-    height: 650px;
-    width: 450px;
+    height: 85%;
+    width: 90%;
+  }
+  .calender {
+    height: 73%;
+    width: 98%;
+
+    margin: 5px 8px;
+    border-radius: 5px;
+    overflow: hidden;
   }
 
   button {
     margin-top: 2%;
+  }
+
+  .day {
+    font-size: 10px;
+  }
+  .date {
+    font-size: 10px;
   }
 }
