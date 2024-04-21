@@ -1,11 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
-import React from 'react';
+import logo from "./logo.svg";
+import "./App.css";
+import React from "react";
+import CalenderView from "./Component/Calender/CalenderView";
 
-function App () {
+function App() {
   return (
     <div className="App">
-      Calender planner
+      <CalenderView />
     </div>
   );
 }
